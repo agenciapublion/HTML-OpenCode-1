@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample HTML</title>
+    <link rel="stylesheet" href="static/vendor/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="static/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+
+    <div id="div-main" class="container">
+
+        <div class="offset-lg-2">
+            <div class="col-12 col-lg-10">
+                <div id="div-logo" class="card">
+                    <img class="card-img-top img-fluid" src="./static/img/logo.png">
+                    <div class="card-body text-center">
+                        <a href="#" class="card-link" data-toggle="collapse" data-target="#div-login">Login In</a>
+                        <a href="#" class="card-link" data-toggle="collapse" data-target="#div-register">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="div-login" class="show" data-parent="#div-main">
+
+            <form action="./index.html" method="POST">
+
+                <div class="offset-lg-2">
+                    <div class="form-group col-lg-10">
+                        <label for="">User</label>
+                        <input type="email" class="form-control" name="form-login-email" id="form-login-email"
+                            placeholder="email@exemple.com" required>
+                    </div>
+
+                    <div class="form-group col-lg-10">
+                        <label for="">Password</label>
+                        <input type="password" class="form-control" name="form-login-password" id="form-login-password"
+                            placeholder="password" required>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" name="form-login-remember"
+                                id="form-login-remember" value="checkedValue" checked>
+                            Remember me!
+                        </label>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+
+            </form>
+
+        </div>
+
+        <div id="div-register" class="collapse" data-parent="#div-main">
+
+            <form action="./index.html" method="POST">
+
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="">First Name</label>
+                            <input type="text" class="form-control" name="form-register-fname" id="form-register-fname"
+                                placeholder="Jhon" required>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="">Last Name</label>
+                            <input type="text" class="form-control" name="form-register-lname" id="form-register-lname"
+                                placeholder="Coulb" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="form-group">
+                            <label for="">E-mail</label>
+                            <input type="email" class="form-control" name="form-register-email" id="form-register-email"
+                                placeholder="jhon@exemple.com" required>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="form-group">
+                            <label for="">Phone</label>
+                            <input type="tel" class="form-control" name="form-register-phone" id="form-register-phone"
+                                placeholder="+55 19 99999-9999" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="">Password</label>
+                    <input type="password" class="form-control" name="form-register-password"
+                        id="form-register-password" placeholder="password" required>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="static/vendor/jquery/jquery.js"></script>
+    <script src="static/vendor/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
