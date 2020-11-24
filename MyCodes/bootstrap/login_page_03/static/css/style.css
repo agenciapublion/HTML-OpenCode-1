@@ -1,0 +1,14 @@
+html,
+body,
+main {
+    height: 100%;
+}
+
+#div-card-login {
+    width: 50%;
+}
+
+.btn-form-login {
+    width: 8rem;
+    margin: 2px;
+}
